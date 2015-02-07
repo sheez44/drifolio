@@ -1,0 +1,22 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+.btn-default {
+	margin: 50px 0;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+	color: #b2b2b2;
+	letter-spacing: 2px;
+	@include transition(color 0.7s ease-out);
+	&:hover, &:active {
+		background: none;
+		border: none;
+		color: #ea9312;
+	}
+}
+
+.bigicon {
+	font-size: 3em;
+}

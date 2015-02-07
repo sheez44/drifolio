@@ -1,3 +1,18 @@
 // ==========================================================================
 // Mixins
 // ==========================================================================
+
+
+// Sets the rem value by calling the calculate rem, also sets a fallback
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
