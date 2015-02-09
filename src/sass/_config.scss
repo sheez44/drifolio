@@ -11,15 +11,28 @@ $font-size-primary: 18px;
 
 $font-family-primary: 'Raleway', sans-serif;
 
-
 $font-weight-thin: 100;
 $font-weight-default: 400;
 
+// Line height
+
+$line-height-primary: 1.8em;
+
 // colors
+
+$tuna-gray: #363942;
+$mine_shaft-gray: #333;
+$gamboge-orange: #EA9312;
+
 
 $white: #fff;
 $black: #000;
-$gray: #333;
+$gray: #7E7E7E;
 
-$color-primary: $gray;
+$color-primary: $mine_shaft-gray;
 
+$animation-speed-default: 0.7s ease-out;
+
+$footer: (
+	background-color:  ($tuna-gray)
+); 

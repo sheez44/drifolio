@@ -6,19 +6,46 @@
 
 html {
 	font-size: 18px;
+
 }
 
 body {
-	@include font-size(18px);
+	@include font-size(14px);
 	color: $color-primary;
 	font-family: $font-family-primary;
 	font-weight: $font-weight-default;
+	line-height: $line-height-primary;
 }
 
 .testimonials {
-	&__header-lockup {
+	.col-md-6 {
+		padding-bottom: 50px;
+		color: #b2b2b2;
+	}
+	&__music-section {
 		text-align: center;
 		padding-top: 100px;
 		padding-bottom: 50px;
+	}
+	&__portrait {
+		border-radius: 50%;
+		width: 80px;
+		float: left;
+		margin-right: 20px;
+	}
+	&__quotes {
+		font-style: italic;
+		letter-spacing: 1px;
+		font-weight: lighter;
+		padding-left: 100px;
+		&--name {
+			margin-bottom: 5px;
+			color: inherit;
+			font-size: inherit;
+		}
+		&--position {
+			margin: 0 0 10px;
+			font-size: inherit;
+		}
 	}
 }

@@ -1,0 +1,47 @@
+// ==========================================================================
+// footer
+// ==========================================================================
+
+footer {
+	text-align: center;
+	background-color: map-get($footer, background-color);
+	padding: 50px 0;
+	a {
+		color: #ea9312;
+		@include transition(color $animation-speed-default);
+		&:hover, &:active {
+			color: map-get($footer, background-color);
+			text-decoration: none;
+		}
+	}
+	.footer {		
+		.bigicon {
+			color: $gray;
+		}
+		&__list {
+			padding-left: 0;
+			margin: 30px 0;
+			&--social {
+				padding: 0;
+				margin: 0 0 10px;
+			}
+		}
+		&__listitem {
+			display: inline-block;
+			padding: 10px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			&--social {				
+				font-size: 2em;
+				a {
+					color: $gray;
+				}
+			}
+		}
+		&__copyright {
+			color: $gray;
+			font-weight: lighter;
+			letter-spacing: 1px;
+		}
+	}
+}
