@@ -16,3 +16,7 @@
     clear: both;
   }
 }
+
+@mixin animation-default($style: color) {
+	@include transition($style $animation-speed-default)
+}

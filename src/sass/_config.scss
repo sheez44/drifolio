@@ -9,7 +9,9 @@ $font-size-primary: 18px;
 
 // Font-family
 
-$font-family-primary: 'Raleway', sans-serif;
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Raleway', sans-serif;
+
 
 $font-weight-thin: 100;
 $font-weight-default: 400;
@@ -17,9 +19,10 @@ $font-weight-default: 400;
 // Line height
 
 $line-height-primary: 1.8em;
+$line-height-secondary: 1.4em;
 
 // colors
-
+$noble-gray: #b2b2b2;
 $tuna-gray: #363942;
 $mine_shaft-gray: #333;
 $gamboge-orange: #EA9312;
@@ -30,6 +33,7 @@ $black: #000;
 $gray: #7E7E7E;
 
 $color-primary: $mine_shaft-gray;
+$color-secondary: $noble-gray;
 
 $animation-speed-default: 0.7s ease-out;
 

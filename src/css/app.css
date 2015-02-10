@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 /* line 13, ../sass/_mixins.scss */
 .portfolio__list:after {
   content: "";
@@ -8152,56 +8153,223 @@ button.close {
     display: none !important;
   }
 }
-/* line 7, ../sass/_main.scss */
+/* line 5, ../sass/_placeholders.scss */
+p {
+  letter-spacing: 1px;
+  color: #b2b2b2;
+  font-weight: lighter;
+}
+
+/* line 11, ../sass/_placeholders.scss */
+.bigicon {
+  font-size: 3em;
+}
+
+/* line 9, ../sass/_main.scss */
 html {
   font-size: 18px;
 }
 
-/* line 12, ../sass/_main.scss */
+/* line 14, ../sass/_main.scss */
 body {
   font-size: 14px;
   font-size: 0.77778rem;
   color: #333;
-  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.8em;
 }
 
-/* line 21, ../sass/_main.scss */
+/* line 28, ../sass/_main.scss */
+.clients h4 {
+  padding-top: 15px;
+  font-weight: 500;
+}
+/* line 33, ../sass/_main.scss */
+.clients ul li {
+  display: inline;
+  margin-left: 5%;
+}
+/* line 36, ../sass/_main.scss */
+.clients ul li:first-child {
+  margin-left: 0;
+}
+
+/* line 43, ../sass/_main.scss */
+.myself {
+  padding-top: 100px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+/* line 47, ../sass/_main.scss */
+.myself__name {
+  font-size: 42px;
+  font-size: 2.33333rem;
+  font-weight: 300;
+}
+/* line 51, ../sass/_main.scss */
+.myself h3 {
+  font-size: 18px;
+  font-size: 1rem;
+}
+/* line 54, ../sass/_main.scss */
+.myself .dribble {
+  display: inline-block;
+}
+
+/* line 60, ../sass/_main.scss */
 .testimonials .col-md-6 {
   padding-bottom: 50px;
   color: #b2b2b2;
 }
-/* line 25, ../sass/_main.scss */
+/* line 64, ../sass/_main.scss */
 .testimonials__music-section {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 50px;
 }
-/* line 30, ../sass/_main.scss */
+/* line 69, ../sass/_main.scss */
 .testimonials__portrait {
   border-radius: 50%;
   width: 80px;
   float: left;
   margin-right: 20px;
+  -webkit-transition: border-radius 0.7s ease-out;
+  -o-transition: border-radius 0.7s ease-out;
+  transition: border-radius 0.7s ease-out;
 }
-/* line 36, ../sass/_main.scss */
+/* line 75, ../sass/_main.scss */
+.testimonials__portrait:hover {
+  border-radius: 0;
+}
+/* line 79, ../sass/_main.scss */
 .testimonials__quotes {
   font-style: italic;
-  letter-spacing: 1px;
-  font-weight: lighter;
   padding-left: 100px;
 }
-/* line 41, ../sass/_main.scss */
+/* line 82, ../sass/_main.scss */
 .testimonials__quotes--name {
   margin-bottom: 5px;
   color: inherit;
   font-size: inherit;
 }
-/* line 46, ../sass/_main.scss */
+/* line 87, ../sass/_main.scss */
 .testimonials__quotes--position {
   margin: 0 0 10px;
   font-size: inherit;
+}
+
+/* line 97, ../sass/_main.scss */
+.myapps ul {
+  padding-left: 0;
+}
+/* line 99, ../sass/_main.scss */
+.myapps ul li {
+  display: inline;
+}
+/* line 101, ../sass/_main.scss */
+.myapps ul li img {
+  width: 30px;
+}
+
+/* line 108, ../sass/_main.scss */
+.offers {
+  text-align: center;
+}
+/* line 110, ../sass/_main.scss */
+.offers .col-md-6, .offers .col-lg-4 {
+  padding-bottom: 50px;
+}
+
+/* line 115, ../sass/_main.scss */
+.services, .header__works {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* line 120, ../sass/_main.scss */
+.line__orange {
+  width: 80px;
+  border-top: 2px solid #ea9312;
+}
+
+/* line 125, ../sass/_main.scss */
+.portfolio {
+  background: #efefef;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+  color: #363942;
+}
+/* line 131, ../sass/_main.scss */
+.portfolio img {
+  max-width: 100%;
+  border-radius: 5px;
+  -webkit-transition: opacity 0.7s ease-out;
+  -o-transition: opacity 0.7s ease-out;
+  transition: opacity 0.7s ease-out;
+}
+/* line 135, ../sass/_main.scss */
+.portfolio img:hover {
+  opacity: 0.5;
+}
+/* line 139, ../sass/_main.scss */
+.portfolio__list {
+  list-style-type: none;
+}
+/* line 143, ../sass/_main.scss */
+.portfolio__listitem {
+  width: 31%;
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  -webkit-transition: box-shadow 0.7s ease-out;
+  -o-transition: box-shadow 0.7s ease-out;
+  transition: box-shadow 0.7s ease-out;
+}
+/* line 150, ../sass/_main.scss */
+.portfolio__listitem h3 {
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* line 156, ../sass/_main.scss */
+.portfolio__listitem:hover {
+  -webkit-box-shadow: 1px 2px 25px rgba(160, 160, 160, 0.4);
+  box-shadow: 1px 2px 25px rgba(160, 160, 160, 0.4);
+}
+/* line 159, ../sass/_main.scss */
+.portfolio__listitem--likes {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+/* line 164, ../sass/_main.scss */
+.portfolio__listitem--comments {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+/* line 170, ../sass/_main.scss */
+.portfolio__link {
+  color: inherit;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: left;
+  -webkit-transition: color 0.7s ease-out;
+  -o-transition: color 0.7s ease-out;
+  transition: color 0.7s ease-out;
+}
+/* line 176, ../sass/_main.scss */
+.portfolio__link:hover, .portfolio__link:active {
+  color: #ea9312;
+  text-decoration: none;
 }
 
 @-moz-keyframes hover-orange {
@@ -8228,7 +8396,7 @@ body {
     color: #ea9312;
   }
 }
-/* line 7, ../sass/modules/_header.scss */
+/* line 5, ../sass/modules/_header.scss */
 .jumbotron {
   background-image: url('../img/trianglify-background.svg?1418778482');
   height: 880px;
@@ -8237,35 +8405,35 @@ body {
   overflow: hidden;
   color: #fff;
 }
-/* line 14, ../sass/modules/_header.scss */
+/* line 12, ../sass/modules/_header.scss */
 .jumbotron .col-md-3 {
   padding: 0;
 }
-/* line 17, ../sass/modules/_header.scss */
+/* line 15, ../sass/modules/_header.scss */
 .jumbotron__header {
   max-width: 870px;
   margin: 0 auto;
 }
-/* line 20, ../sass/modules/_header.scss */
+/* line 18, ../sass/modules/_header.scss */
 .jumbotron__header h1 {
   font-size: 42px;
   font-size: 2.33333rem;
-  font-weight: 100;
+  font-weight: 500;
 }
-/* line 24, ../sass/modules/_header.scss */
+/* line 22, ../sass/modules/_header.scss */
 .jumbotron__header h3 {
-  font-weight: 100;
+  font-weight: 500;
   font-size: 18px;
   font-size: 1rem;
   line-height: 1.4;
 }
-/* line 30, ../sass/modules/_header.scss */
+/* line 28, ../sass/modules/_header.scss */
 .jumbotron__image {
   margin-top: 20px;
   max-width: 1200px;
   width: 100%;
 }
-/* line 35, ../sass/modules/_header.scss */
+/* line 33, ../sass/modules/_header.scss */
 .jumbotron .github-fork {
   background: url(https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67);
   height: 144px;
@@ -8273,159 +8441,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-}
-
-/* line 46, ../sass/modules/_header.scss */
-.partners h4 {
-  padding-top: 15px;
-  font-weight: 500;
-}
-/* line 51, ../sass/modules/_header.scss */
-.partners ul li {
-  display: inline;
-  margin-left: 5%;
-}
-/* line 54, ../sass/modules/_header.scss */
-.partners ul li:first-child {
-  margin-left: 0;
-}
-
-/* line 61, ../sass/modules/_header.scss */
-.myself {
-  padding-top: 100px;
-}
-/* line 63, ../sass/modules/_header.scss */
-.myself h2 {
-  font-size: 42px;
-  font-size: 2.33333rem;
-}
-/* line 66, ../sass/modules/_header.scss */
-.myself h3 {
-  font-size: 18px;
-  font-size: 1rem;
-}
-/* line 69, ../sass/modules/_header.scss */
-.myself p {
-  letter-spacing: 1px;
-  color: #b2b2b2;
-  font-weight: lighter;
-}
-/* line 74, ../sass/modules/_header.scss */
-.myself .dribble {
-  display: inline-block;
-}
-
-/* line 80, ../sass/modules/_header.scss */
-.myapps ul {
-  padding-left: 0;
-}
-/* line 82, ../sass/modules/_header.scss */
-.myapps ul li {
-  display: inline;
-}
-/* line 84, ../sass/modules/_header.scss */
-.myapps ul li img {
-  width: 30px;
-}
-
-/* line 91, ../sass/modules/_header.scss */
-.offers {
-  text-align: center;
-}
-/* line 93, ../sass/modules/_header.scss */
-.offers .col-md-6, .offers .col-lg-4 {
-  padding-bottom: 50px;
-}
-
-/* line 98, ../sass/modules/_header.scss */
-.services, .header__works {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
-/* line 103, ../sass/modules/_header.scss */
-.line__orange {
-  width: 80px;
-  border-top: 2px solid #ea9312;
-}
-
-/* line 108, ../sass/modules/_header.scss */
-.portfolio {
-  background: #efefef;
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 50px;
-  color: #363942;
-}
-/* line 114, ../sass/modules/_header.scss */
-.portfolio img {
-  max-width: 100%;
-  border-radius: 5px;
-  -webkit-transition: opacity 0.7s ease-out;
-  -o-transition: opacity 0.7s ease-out;
-  transition: opacity 0.7s ease-out;
-}
-/* line 118, ../sass/modules/_header.scss */
-.portfolio img:hover {
-  opacity: 0.5;
-}
-/* line 122, ../sass/modules/_header.scss */
-.portfolio__list {
-  list-style-type: none;
-}
-/* line 126, ../sass/modules/_header.scss */
-.portfolio__listitem {
-  width: 31%;
-  background: #fff;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 10px;
-  padding: 15px;
-  -webkit-transition: box-shadow 0.7s ease-out;
-  -o-transition: box-shadow 0.7s ease-out;
-  transition: box-shadow 0.7s ease-out;
-}
-/* line 133, ../sass/modules/_header.scss */
-.portfolio__listitem h3 {
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-/* line 139, ../sass/modules/_header.scss */
-.portfolio__listitem:hover {
-  -webkit-box-shadow: 1px 2px 25px rgba(160, 160, 160, 0.4);
-  box-shadow: 1px 2px 25px rgba(160, 160, 160, 0.4);
-}
-/* line 142, ../sass/modules/_header.scss */
-.portfolio__listitem--likes {
-  width: 50%;
-  float: left;
-  text-align: left;
-}
-/* line 147, ../sass/modules/_header.scss */
-.portfolio__listitem--comments {
-  width: 50%;
-  float: right;
-  text-align: right;
-}
-/* line 153, ../sass/modules/_header.scss */
-.portfolio__link {
-  color: inherit;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-align: left;
-  -webkit-transition: color 0.7s ease-out;
-  -o-transition: color 0.7s ease-out;
-  transition: color 0.7s ease-out;
-}
-/* line 159, ../sass/modules/_header.scss */
-.portfolio__link:hover, .portfolio__link:active {
-  color: #ea9312;
-  text-decoration: none;
 }
 
 /* line 5, ../sass/modules/_buttons.scss */
@@ -8445,11 +8460,6 @@ body {
   background: none;
   border: none;
   color: #ea9312;
-}
-
-/* line 20, ../sass/modules/_buttons.scss */
-.bigicon {
-  font-size: 3em;
 }
 
 /* line 5, ../sass/modules/_footer.scss */
