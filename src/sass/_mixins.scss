@@ -18,5 +18,28 @@
 }
 
 @mixin animation-default($style: color) {
-	@include transition($style $animation-speed-default)
+	transition: $style $animation-speed-default;
+}
+
+@mixin responsive($size) {
+	@if $size == "sm" {
+		@media screen and (min-width: $mq-small) {
+			@content;
+		}
+	}
+	@if $size == "xs" {
+		@media screen and (min-width: $mq-medium) {
+			@content;
+		}
+	}
+	@if $size == "md" {
+		@media screen and (min-width: $mq-tablet) {
+			@content;
+		}
+	}
+	@if $size == "lg" {
+		@media screen and (min-width: $mq-tablet-h) {
+			@content;
+		}
+	}
 }

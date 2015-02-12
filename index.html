@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Drifolio</title>
-	<link rel="stylesheet" href="src/css/app.css">
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="src/css/simple-line-icons.css">
+	<link rel="stylesheet" href="src/css/app.css">
 	<link rel="shortcut icon" type="image/png" href="src/img/favicon.png">
 </head>
 <body>
@@ -21,15 +23,15 @@
 	</div>
 
 	<div class="container clients">
-		<div class="col-md-3">
+		<div class="col-lg-3 hidden-sm">
 			<h4>Proudly worked with:</h4>
 		</div>
-		<div class="col-md-9">
-			<ul>
-				<li><img src="src/img/payoneer.png" alt="payoneer"></li>
-				<li><img src="src/img/amazon.png" alt="amazon"></li>
-				<li><img src="src/img/elance-odesk.png" alt="odesk"></li>
-				<li><img src="src/img/curb.png" alt="curb"></li>
+		<div class="col-lg-9">
+			<ul class="clients__list">
+				<li class="clients__listitem"><img class="clients__image" src="src/img/payoneer.png" alt="payoneer"></li>
+				<li class="clients__listitem"><img class="clients__image" src="src/img/amazon.png" alt="amazon"></li>
+				<li class="clients__listitem"><img class="clients__image" src="src/img/elance-odesk.png" alt="odesk"></li>
+				<li class="clients__listitem"><img class="clients__image" src="src/img/curb.png" alt="curb"></li>
 			</ul>
 		</div>
 	</div>
@@ -61,14 +63,14 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-			<img src="src/img/user.png" alt="user">
+			<img class="myself__image--main" src="src/img/user.png" alt="user">
 		</div>
 	</div>
 
 	<hr>
 
-	<div class="container offers">
-		<div class="row services">
+	<div class="container services">
+		<div class="row services__header">
 			<span class="bigicon icon_cup"></span>
 			<h3>This is what I can do for you</h3>
 			<hr class="line__orange">
@@ -79,27 +81,27 @@
 		
 			<div class="col-md-6 col-lg-4">
 				<img src="src/img/s1.png">
-				<h3>Responsive Web Design</h3>
+				<h3 class="services__subheader">Responsive Web Design</h3>
 				<p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
 			</div>
 			<div class="col-md-6 col-lg-4"><img src="src/img/s2.png">
-				<h3>Android App Design</h3>
+				<h3 class="services__subheader">Android App Design</h3>
 				<p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
 			</div>
 			<div class="col-md-6 col-lg-4"><img src="src/img/s3.png"
-				><h3>iOS App Design</h3>
+				><h3 class="services__subheader">iOS App Design</h3>
 				<p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
 			</div>
 			<div class="col-md-6 col-lg-4"><img src="src/img/s4.png">
-				<h3>Windows App Design</h3>
+				<h3 class="services__subheader">Windows App Design</h3>
 				<p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
 			</div>
 			<div class="col-md-6 col-lg-4"><img src="src/img/s5.png">
-				<h3>Brand Identity Design</h3>
+				<h3 class="services__subheader">Brand Identity Design</h3>
 				<p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
 			</div>
 			<div class="col-md-6 col-lg-4"><img src="src/img/s6.png">
-				<h3>CMYK Print Design</h3>
+				<h3 class="services__subheader">CMYK Print Design</h3>
 				<p>Grinder affogato, dark, sweet carajillo, flavour seasonal aroma single origin cream. Percolator. Eligendi impedit dolores nulla.</p>
 			</div>
 

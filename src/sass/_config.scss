@@ -40,3 +40,10 @@ $animation-speed-default: 0.7s ease-out;
 $footer: (
 	background-color:  ($tuna-gray)
 ); 
+
+// Media Queries
+
+$mq-small: 320px;
+$mq-medium: 480px;
+$mq-tablet: 768px;
+$mq-tablet-h: 1024px;

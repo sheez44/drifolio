@@ -11,7 +11,6 @@ module.exports = function(grunt) {
 				dest: 'src/js/main.js'
 			}
 		},
-
 		jshint: {
 			options: {
 				globals: {
@@ -28,18 +27,31 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		compass: {
-			dist: {
-				options: {
-					config: 'config.rb'
-				}
-			}
-		},
 		htmlhint: {
 			html: {
 				src: ['index.html']
 			},
 		},
+		sass: {
+		    dist: {
+		    	options: {
+		    		lineNumbers: true,
+		    	},
+		      files: {
+		        'src/css/app.css' : 'src/sass/app.scss'
+		        }
+		    }
+		  },
+		  autoprefixer: {
+		      options: {
+		        browsers: ['last 2 versions'],
+		        map: true
+		      },
+		      single_file: {
+		        src: 'src/css/app.css',
+		        dest: 'src/css/app.css'
+		        }		    
+		   },
 		watch: {
 			js: {
 				files: ['src/js/modules/*.js'],
@@ -52,7 +64,7 @@ module.exports = function(grunt) {
 			},		
 			css: {
 				files: ['**/*.scss'],
-				tasks: ['compass']
+				tasks: ['sass', 'autoprefixer']
 			}
 		},	
 	});
@@ -62,9 +74,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-htmlhint');
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
-
-	grunt.registerTask('default', ['concat', 'watch', 'jshint', 'uglify', 'compass', 'htmlhint']);
+	grunt.registerTask('default', ['concat', 'watch', 'sass', 'jshint', 'uglify', 'autoprefixer', 'htmlhint']);
 };

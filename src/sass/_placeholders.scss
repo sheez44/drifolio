@@ -2,11 +2,19 @@
 // Placeholders
 // ==========================================================================
 
+
 %paragraph-default-style {
 	letter-spacing: 1px;
 	color: $color-secondary;
 	font-weight: lighter;
 }
+
+%align-horizontal {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 
 .bigicon {
 	font-size: 3em;

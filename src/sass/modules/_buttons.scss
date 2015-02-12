@@ -9,7 +9,7 @@
 	text-transform: uppercase;
 	color: #b2b2b2;
 	letter-spacing: 2px;
-	@include transition(color 0.7s ease-out);
+	transition: color 0.7s ease-out;
 	&:hover, &:active {
 		background: none;
 		border: none;
