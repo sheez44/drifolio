@@ -1,3 +1,15 @@
 // ==========================================================================
 // Navigation
 // ==========================================================================
+
+.navbar {
+	margin-bottom: 0;
+	display: none;		
+	&-brand {
+		@include font-size(18px);
+		line-height: $line-height-navbar;
+	}
+	&-nav>li>a:hover {
+		@include animation-default(all);
+	}
+}

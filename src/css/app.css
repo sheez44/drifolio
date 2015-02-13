@@ -23,6 +23,17 @@ p {
 .bigicon {
   font-size: 3em; }
 
+/* line 23, ../sass/_placeholders.scss */
+.section__title {
+  font-size: 28px;
+  font-size: 1.55556rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500; }
+
+/* line 29, ../sass/_placeholders.scss */
+.btnicon, .brandicon {
+  margin-right: 10px; }
+
 /* line 8, ../sass/_main.scss */
 html {
   font-size: 18px; }
@@ -136,36 +147,40 @@ body {
     font-size: 18px;
     font-size: 1rem;
     letter-spacing: normal; }
+  /* line 131, ../sass/_main.scss */
+  .services img:hover {
+    -webkit-animation: quickZoom 1s 1;
+            animation: quickZoom 1s 1; }
 
-/* line 133, ../sass/_main.scss */
+/* line 136, ../sass/_main.scss */
 .services__header, .header__works {
   padding-top: 100px;
   padding-bottom: 50px; }
 
-/* line 138, ../sass/_main.scss */
+/* line 141, ../sass/_main.scss */
 .line__orange {
   width: 80px;
   border-top: 2px solid #ea9312; }
 
-/* line 143, ../sass/_main.scss */
+/* line 146, ../sass/_main.scss */
 .portfolio {
   background: #efefef;
   text-align: center;
   padding: 30px 0;
   margin-top: 50px;
   color: #363942; }
-  /* line 149, ../sass/_main.scss */
+  /* line 152, ../sass/_main.scss */
   .portfolio img {
     max-width: 100%;
     border-radius: 5px;
     transition: opacity 0.7s ease-out; }
-    /* line 153, ../sass/_main.scss */
+    /* line 156, ../sass/_main.scss */
     .portfolio img:hover {
       opacity: 0.5; }
-  /* line 157, ../sass/_main.scss */
+  /* line 160, ../sass/_main.scss */
   .portfolio__list {
     list-style-type: none; }
-  /* line 161, ../sass/_main.scss */
+  /* line 164, ../sass/_main.scss */
   .portfolio__listitem {
     width: 31%;
     background: #fff;
@@ -174,33 +189,33 @@ body {
     margin: 10px;
     padding: 15px;
     transition: box-shadow 0.7s ease-out; }
-    /* line 168, ../sass/_main.scss */
+    /* line 171, ../sass/_main.scss */
     .portfolio__listitem h3 {
       text-transform: uppercase;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden; }
-    /* line 175, ../sass/_main.scss */
+    /* line 178, ../sass/_main.scss */
     .portfolio__listitem:hover {
       box-shadow: 1px 2px 25px rgba(160, 160, 160, 0.4); }
-    /* line 178, ../sass/_main.scss */
+    /* line 181, ../sass/_main.scss */
     .portfolio__listitem--likes {
       width: 50%;
       float: left;
       text-align: left; }
-    /* line 183, ../sass/_main.scss */
+    /* line 186, ../sass/_main.scss */
     .portfolio__listitem--comments {
       width: 50%;
       float: right;
       text-align: right; }
-  /* line 189, ../sass/_main.scss */
+  /* line 192, ../sass/_main.scss */
   .portfolio__link {
     color: inherit;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: left;
     transition: color 0.7s ease-out; }
-    /* line 195, ../sass/_main.scss */
+    /* line 198, ../sass/_main.scss */
     .portfolio__link:hover, .portfolio__link:active {
       color: #ea9312;
       text-decoration: none; }
@@ -216,9 +231,29 @@ body {
     color: #363942; }
   to {
     color: #ea9312; } }
+@-webkit-keyframes quickZoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+@keyframes quickZoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 /* line 5, ../sass/modules/_header.scss */
 .jumbotron {
-  background-image: image-url("trianglify-background.svg");
+  background-image: url("../img/trianglify-background.svg");
   height: 880px;
   text-align: center;
   padding-top: 100px;
@@ -249,12 +284,25 @@ body {
     width: 100%; }
   /* line 33, ../sass/modules/_header.scss */
   .jumbotron .github-fork {
-    background: image-url("https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67");
+    background: url("https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67");
     height: 144px;
     width: 144px;
     position: absolute;
     left: 0;
     top: 0; }
+
+/* line 5, ../sass/modules/_nav.scss */
+.navbar {
+  margin-bottom: 0;
+  display: none; }
+  /* line 8, ../sass/modules/_nav.scss */
+  .navbar-brand {
+    font-size: 18px;
+    font-size: 1rem;
+    line-height: 20px; }
+  /* line 12, ../sass/modules/_nav.scss */
+  .navbar-nav > li > a:hover {
+    transition: all 0.7s ease-out; }
 
 /* line 5, ../sass/modules/_buttons.scss */
 .btn-default {

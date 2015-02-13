@@ -128,6 +128,9 @@ p {
 		@include font-size(18px);
 		letter-spacing: normal;
 	}
+	img:hover {
+		animation: quickZoom 1s 1;
+	}
 }
 
 .services__header, .header__works {

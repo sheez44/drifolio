@@ -19,3 +19,13 @@
 .bigicon {
 	font-size: 3em;
 }
+
+.section__title {
+	@include font-size(28px);
+	font-family: $font-family-secondary;
+	font-weight: 500;
+}
+
+.btnicon, .brandicon {
+	margin-right: 10px;
+}
