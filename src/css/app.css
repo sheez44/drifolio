@@ -293,15 +293,19 @@ body {
 
 /* line 5, ../sass/modules/_nav.scss */
 .navbar {
-  margin-bottom: 0;
-  display: none; }
-  /* line 8, ../sass/modules/_nav.scss */
+  margin-bottom: 0; }
+  /* line 7, ../sass/modules/_nav.scss */
   .navbar-brand {
     font-size: 18px;
     font-size: 1rem;
     line-height: 20px; }
-  /* line 12, ../sass/modules/_nav.scss */
+  /* line 11, ../sass/modules/_nav.scss */
   .navbar-nav > li > a:hover {
+    transition: all 0.7s ease-out; }
+  /* line 14, ../sass/modules/_nav.scss */
+  .navbar .nav > li > a:focus {
+    background-color: #000;
+    color: #fff;
     transition: all 0.7s ease-out; }
 
 /* line 5, ../sass/modules/_buttons.scss */

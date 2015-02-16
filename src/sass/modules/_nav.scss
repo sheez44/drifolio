@@ -3,8 +3,7 @@
 // ==========================================================================
 
 .navbar {
-	margin-bottom: 0;
-	display: none;		
+	margin-bottom: 0;		
 	&-brand {
 		@include font-size(18px);
 		line-height: $line-height-navbar;
@@ -12,4 +11,9 @@
 	&-nav>li>a:hover {
 		@include animation-default(all);
 	}
+	.nav>li>a:focus {
+		background-color: $black;
+		color: $white;
+		@include animation-default(all);
+	} 
 }

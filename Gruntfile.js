@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 		uglify: {
 			dist: {
 				files: {
-					'build/js/main.min.js': ['src/js/main.js']
+					'production/js/main.min.js': ['src/js/main.js']
 				}
 			}
 		},
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 		   },
 		watch: {
 			js: {
-				files: ['src/js/modules/*.js'],
+				files: ['./src/js/modules/*.js'],
 				tasks: ['concat', 'uglify'],
 
 			},
